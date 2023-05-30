@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+        <footer>
+          Built by Vlad Cuciureanu 2023 -{" "}
+          <Link href="https://github.com/VladCuciureanu/iCalHelper">
+            Source Code
+          </Link>{" "}
+          - Your file isn&apos;t sent anywhere
+        </footer>
+      </body>
     </html>
   );
 }
