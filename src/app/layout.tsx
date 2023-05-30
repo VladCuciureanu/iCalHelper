@@ -1,3 +1,4 @@
+import "./globals.css";
 import { Inter } from "next/font/google";
 import Link from "next/link";
 
@@ -18,7 +19,15 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {children}
-        <footer>
+        <footer
+          style={{
+            height: "1rem",
+            fontSize: ".75em",
+            borderTop: "1px solid lightgray",
+            marginTop: "16px",
+            paddingTop: "8px",
+          }}
+        >
           Built by Vlad Cuciureanu 2023 -{" "}
           <Link href="https://github.com/VladCuciureanu/iCalHelper">
             Source Code

@@ -27,26 +27,26 @@ export default function Home() {
         </li>
       </ul>
       <p>
-        But you <i>can</i> open it via Safari
+        But you <i>can</i> open it via Safari. <br /> This tool loads an .ics
+        file and opens it in-browser. All client-side.
       </p>
-      <p>
-        This tool loads an .ics file and opens it in-browser. All client-side.
-      </p>
+      <p></p>
       <form
         onSubmit={handleSubmit}
-        style={{ display: "flex", flexDirection: "column" }}
+        style={{ display: "flex", flexDirection: "column", gap: "16px" }}
       >
-        <label style={{ marginBottom: "8px", fontWeight: 600 }}>
-          Select .ics file:
-        </label>
+        <label style={{ fontWeight: 600 }}>Select .ics file:</label>
         <input
           type="file"
           accept=".ics"
           ref={fileInputRef as LegacyRef<HTMLInputElement>}
         />
-        <br />
-        <button type="submit" style={{ width: "100px", marginBottom: "8px" }}>
-          Open .ics file
+        <button
+          type="submit"
+          disabled={fileInputRef.current?.files?.length === 0}
+          style={{ width: "100px" }}
+        >
+          Open
         </button>
       </form>
     </main>
