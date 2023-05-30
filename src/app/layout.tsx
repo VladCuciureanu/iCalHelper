@@ -5,7 +5,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "iCal Redirect",
+  title: "iCal Helper",
   description:
     "Useful little tool to bypass iPhone limitations regarding iCal files.",
 };
@@ -17,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         {children}
         <footer
