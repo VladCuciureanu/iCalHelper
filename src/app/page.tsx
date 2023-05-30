@@ -21,14 +21,14 @@ export default function Home() {
         <li>You can&apos;t save it to iCloud files and open it</li>
         <li>You can&apos;t use the share button</li>
         <li>You can&apos;t open the Calendar app and import it from there</li>
-        <li>
-          You can only import .ics files if you receive them from Apple&apos;s
-          native iOS Mail app
-        </li>
       </ul>
       <p>
-        But you <i>can</i> open it via Safari. <br /> This tool loads an .ics
-        file and opens it in-browser. All client-side.
+        You can only import .ics files if you receive them from Apple&apos;s
+        native iOS Mail app!
+      </p>
+      <p>
+        But you can also open it <i>via Safari</i>. <br /> This tool loads an
+        .ics file and opens it in-browser. All client-side.
       </p>
       <p></p>
       <form
