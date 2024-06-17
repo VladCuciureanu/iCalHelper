@@ -1,9 +1,4 @@
-<div align="center">
-  <div>&nbsp;</div>
-  <img src="public/ical-helper-logo.png" width="400"/> 
-</div>
-
-## Introduction
+# 🗓️ iCal Helper
 
 iCal Helper lets you import iCal files into your calendar on iOS.
 
